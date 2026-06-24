@@ -7,7 +7,7 @@ const heroImage = "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-[100svh] flex flex-col justify-center bg-black overflow-hidden pt-20">
+    <section className="relative w-full min-h-[110svh] flex flex-col justify-center bg-black overflow-hidden pt-20">
       {/* Hero Image — subtle Ken Burns with soft fade-in */}
       <motion.div
         initial={{ scale: 1.1, opacity: 0 }}
@@ -45,23 +45,27 @@ export function HeroSection() {
               },
             }}
           >
-            {/* Premium Pill Badge Label */}
             <motion.div
   variants={{
     hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
     visible: { opacity: 1, y: 0, filter: "blur(0px)" },
   }}
-  transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
-  className="mb-8 inline-flex items-center justify-center px-7 py-3 rounded-full border border-amber-400/30 bg-black/40 backdrop-blur-xl shadow-[0_8px_40px_rgba(0,0,0,0.6)] relative overflow-hidden"
+  transition={{ duration: 1 }}
+  className="mb-6"
 >
-  <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 via-white/5 to-amber-500/10 animate-pulse" />
-
-  <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/15 to-transparent" />
-
-  <span className="relative z-10 text-amber-300 font-bold text-sm md:text-base tracking-[0.35em] uppercase drop-shadow-[0_0_20px_rgba(251,191,36,0.6)]">
-     GK Journeys 
-  </span>
+  <div className="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white/20 shadow-[0_0_40px_rgba(255,255,255,0.15)]">
+  <Image
+    src="/images/logo.jpeg"
+    alt="GK Journeys Logo"
+    width={112}
+    height={112}
+    priority
+    className="w-full h-full object-cover"
+  />
+</div>
 </motion.div>
+            {/* Premium Pill Badge Label */}
+            {/* Premium Pill Badge Label */} <motion.div variants={{ hidden: { opacity: 0, y: 20, filter: "blur(8px)" }, visible: { opacity: 1, y: 0, filter: "blur(0px)" }, }} transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }} className="mb-8 inline-flex items-center justify-center px-7 py-3 rounded-full border border-amber-400/30 bg-black/40 backdrop-blur-xl shadow-[0_8px_40px_rgba(0,0,0,0.6)] relative overflow-hidden" > <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 via-white/5 to-amber-500/10 animate-pulse" /> <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/15 to-transparent" /> <span className="relative z-10 text-amber-300 font-bold text-sm md:text-base tracking-[0.35em] uppercase drop-shadow-[0_0_20px_rgba(251,191,36,0.6)]"> GK Journeys </span> </motion.div>
 
             {/* Heading */}
             <motion.h1

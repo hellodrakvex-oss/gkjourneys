@@ -8,7 +8,7 @@ export function Footer() {
       {/* Top edge glow line */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-12 pb-6">
+      <div className="container mx-auto px-4 lg:px-8 relative z-10 pt-12 pb-20 md:pb-6">
 
         {/* ── Main 4-Column Grid ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-white/10">

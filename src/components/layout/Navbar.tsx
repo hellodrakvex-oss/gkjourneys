@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { MobileCTABar } from "@/components/layout/MobileCTABar";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -40,12 +41,12 @@ export function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 z-50 group">
-              <div className="relative h-12 w-40">
+              <div className="relative h-12 w-12 rounded-full overflow-hidden border-2 border-white/30 shadow-lg">
   <Image
     src="/images/logo.jpeg"
     alt="GK Journeys"
     fill
-    className="object-contain"
+    className="object-cover"
     priority
   />
 </div>
@@ -127,54 +128,95 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-40 bg-white md:hidden pt-32 px-8 flex flex-col h-screen"
+            className="fixed inset-0 z-40 bg-white md:hidden overflow-y-auto"
+            style={{ WebkitOverflowScrolling: "touch", height: "100vh" }}
           >
-            <nav className="flex flex-col gap-6 mt-8">
-              {navLinks.map((link, i) => {
-                const isActive = pathname === link.href;
-                return (
-                  <motion.div
-                    key={link.name}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1 + 0.2 }}
-                  >
-                    <Link
-                      href={link.href}
-                      className={cn(
-                        "font-serif text-3xl block transition-colors",
-                        isActive ? "text-primary font-bold" : "text-gray-900 hover:text-primary"
-                      )}
-                      onClick={() => setIsMobileMenuOpen(false)}
+            <div className="flex flex-col min-h-full pt-32 px-8 pb-52">
+              <nav className="flex flex-col gap-6 mt-8">
+                {navLinks.map((link, i) => {
+                  const isActive = pathname === link.href;
+                  return (
+                    <motion.div
+                      key={link.name}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.1 + 0.2 }}
                     >
-                      {link.name}
-                    </Link>
-                  </motion.div>
-                );
-              })}
-            </nav>
+                      <Link
+                        href={link.href}
+                        className={cn(
+                          "font-serif text-3xl block transition-colors",
+                          isActive ? "text-primary font-bold" : "text-gray-900 hover:text-primary"
+                        )}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {link.name}
+                      </Link>
+                    </motion.div>
+                  );
+                })}
+              </nav>
 
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              className="mt-auto pb-12"
-            >
-              <div className="w-full h-px bg-gray-100 mb-8" />
-              <a
-                href="https://wa.me/917892050273"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-primary text-white py-4 rounded-full font-bold text-xs tracking-widest uppercase text-center block mb-6 shadow-lg shadow-primary/20"
-                onClick={() => setIsMobileMenuOpen(false)}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5 }}
+                className="mt-auto pt-8"
               >
-                Start Planning
-              </a>
-              <div className="flex justify-between items-center text-[10px] font-bold tracking-widest text-gray-400 uppercase">
-                <span>Mysore, India</span>
-                <a href="tel:+917892050273" className="hover:text-primary transition-colors text-gray-900">+91 78920 50273</a>
-              </div>
-            </motion.div>
+                <div className="w-full h-px bg-gray-100 mb-8" />
+                <a
+                  href="https://wa.me/917892050273"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-primary text-white py-4 rounded-full font-bold text-xs tracking-widest uppercase text-center block mb-6 shadow-lg shadow-primary/20"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Start Planning
+                </a>
+                <div className="flex justify-between items-center text-[10px] font-bold tracking-widest text-gray-400 uppercase">
+                  <span>Mysore, India</span>
+                  <a href="tel:+917892050273" className="hover:text-primary transition-colors text-gray-900">+91 78920 50273</a>
+                </div>
+              </motion.div>
+
+              {/* Mobile Menu Footer */}
+              <motion.footer
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+                className="mt-6 pt-4 border-t border-gray-100 text-center"
+              >
+                <p className="text-xs text-gray-400 font-medium tracking-widest uppercase mb-1">
+                  &copy; 2026 GK Journeys. All Rights Reserved.
+                </p>
+                <p className="text-xs text-gray-400 tracking-wide mt-1">
+                  Developed by{" "}
+                  <a
+                    href="https://www.drakvex.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-semibold hover:text-gray-700 transition-all duration-300"
+                  >
+                    Drakvex
+                  </a>
+                </p>
+              </motion.footer>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* CTA Bar — fades out when mobile menu opens, fades back in when it closes */}
+      <AnimatePresence>
+        {!isMobileMenuOpen && (
+          <motion.div
+            key="cta-bar"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 16 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+          >
+            <MobileCTABar />
           </motion.div>
         )}
       </AnimatePresence>
