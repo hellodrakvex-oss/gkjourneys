@@ -36,13 +36,13 @@ const data: { Icon: LucideIcon; title: string; content: string }[] = [
     Icon: Target,
     title: "Our Mission",
     content:
-      "To make quality travel planning accessible, personal, and stress-free for every traveler — whether it's their first trip or their fiftieth.",
+      "To plan trips across India with complete transparency. You get direct founder support, verified hotels & drivers in every city, and clear costs upfront so you travel with confidence, not confusion.",
   },
   {
     Icon: Globe2,
     title: "Our Vision",
     content:
-      "To become South India's most trusted travel brand — known not for scale, but for the depth of care and quality we bring to every single journey.",
+      "To become India's most trusted travel brand — known not for scale, but for the depth of care and quality we bring to every single journey.",
   },
   {
     Icon: HeartHandshake,

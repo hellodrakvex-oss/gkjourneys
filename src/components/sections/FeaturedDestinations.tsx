@@ -6,25 +6,18 @@ import Image from "next/image";
 
 const destinations = [
   {
+    name: "Karnataka",
+    id: "karnataka",
+    tagline: "One State. Many Worlds.",
+    img: "/mysore-palace.png",
+    icon: "🛕",
+  },
+  {
     name: "Kerala",
     id: "kerala",
     tagline: "God's Own Country",
     img: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=85&w=800&auto=format&fit=crop",
-    icon: "🚣", // Or an SVG icon
-  },
-  {
-    name: "Karnataka",
-    id: "karnataka",
-    tagline: "One State. Many Worlds.",
-    img: "https://plus.unsplash.com/premium_photo-1697730494992-7d5a0c46ea52?q=85&w=800&auto=format&fit=crop",
-    icon: "🛕",
-  },
-  {
-    name: "Tamil Nadu",
-    id: "tamil-nadu",
-    tagline: "Where Stories Never End",
-    img: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=85&w=800&auto=format&fit=crop",
-    icon: "🏛️",
+    icon: "🚣",
   },
   {
     name: "Goa",
@@ -32,6 +25,13 @@ const destinations = [
     tagline: "Sun. Sand. Serenity.",
     img: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=85&w=800&auto=format&fit=crop",
     icon: "🏖️",
+  },
+  {
+    name: "Tamil Nadu",
+    id: "tamil-nadu",
+    tagline: "Where Stories Never End",
+    img: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=85&w=800&auto=format&fit=crop",
+    icon: "🏛️",
   },
   {
     name: "North India",

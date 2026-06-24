@@ -35,7 +35,7 @@ export default function AboutPage() {
         <div className="relative z-10 container pb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-3">Our Story</h1>
           <p className="text-white/70 text-lg max-w-xl">
-            A young travel brand built on honesty, personalization, and a genuine love for crafting unforgettable journeys.
+            "Every journey should tell a unique story." That's the belief I built GK Journeys on. As a young entrepreneur from Mysore, I saw a gap between the generic travel packages tourists were getting and the deeply personal, memorable experiences they deserved.
           </p>
         </div>
       </div>

@@ -15,6 +15,27 @@ export const metadata: Metadata = {
 
 const destinations = [
   {
+    id: "karnataka",
+    name: "Karnataka",
+    tagline: "Land of Heritage & Nature",
+    description:
+      "Karnataka is a rich tapestry of ancient temples, royal palaces, pristine beaches, and wildlife sanctuaries. From the heritage city of Mysore to the misty hills of Chikmagalur — Karnataka offers something for every kind of traveler.",
+    image: "/mysore-palace.png",
+    places: [
+      { name: "Mysore", desc: "Royal palaces, silk markets, and Dasara festival" },
+      { name: "Coorg", desc: "Coffee plantations, waterfalls, and misty hills" },
+      { name: "Chikmagalur", desc: "Trekking, coffee estates, and Baba Budangiri" },
+      { name: "Hampi", desc: "UNESCO World Heritage ruins of the Vijayanagara Empire" },
+      { name: "Belur & Halebidu", desc: "Stunning Hoysala temple architecture" },
+      { name: "Jog Falls", desc: "India's highest plunge waterfall" },
+      { name: "Gokarna", desc: "Pristine beaches and sacred temples" },
+      { name: "Murudeshwar", desc: "Tallest Shiva statue and beachside temple" },
+      { name: "Dandeli", desc: "River rafting, jungle camps, and wildlife" },
+      { name: "Bandipur National Park", desc: "Tiger reserve and wildlife safaris" },
+    ],
+    highlights: ["Heritage Tours", "Wildlife Safaris", "Beach Getaways", "Coffee Estate Stays", "Trekking Adventures"],
+  },
+  {
     id: "kerala",
     name: "Kerala",
     tagline: "God's Own Country",
@@ -32,25 +53,19 @@ const destinations = [
     highlights: ["Houseboat Stays", "Ayurveda Retreats", "Tea Garden Visits", "Wildlife Safaris", "Beach Holidays"],
   },
   {
-    id: "karnataka",
-    name: "Karnataka",
-    tagline: "Land of Heritage & Nature",
+    id: "goa",
+    name: "Goa",
+    tagline: "Sun, Sand & Soul",
     description:
-      "Karnataka is a rich tapestry of ancient temples, royal palaces, pristine beaches, and wildlife sanctuaries. From the heritage city of Mysore to the misty hills of Chikmagalur — Karnataka offers something for every kind of traveler.",
-    image: "https://plus.unsplash.com/premium_photo-1697730494992-7d5a0c46ea52?q=80&w=2000&auto=format&fit=crop",
+      "Goa is India's pocket of paradise — where golden beaches meet Portuguese heritage, fresh seafood, vibrant markets, and a spirit that refuses to slow down. Perfect for couples, friends, and families alike.",
+    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=2000&auto=format&fit=crop",
     places: [
-      { name: "Mysore", desc: "Royal palaces, silk markets, and Dasara festival" },
-      { name: "Coorg", desc: "Coffee plantations, waterfalls, and misty hills" },
-      { name: "Chikmagalur", desc: "Trekking, coffee estates, and Baba Budangiri" },
-      { name: "Hampi", desc: "UNESCO World Heritage ruins of the Vijayanagara Empire" },
-      { name: "Belur & Halebidu", desc: "Stunning Hoysala temple architecture" },
-      { name: "Jog Falls", desc: "India's highest plunge waterfall" },
-      { name: "Gokarna", desc: "Pristine beaches and sacred temples" },
-      { name: "Murudeshwar", desc: "Tallest Shiva statue and beachside temple" },
-      { name: "Dandeli", desc: "River rafting, jungle camps, and wildlife" },
-      { name: "Bandipur National Park", desc: "Tiger reserve and wildlife safaris" },
+      { name: "North Goa", desc: "Baga, Calangute, Anjuna beaches and vibrant nightlife" },
+      { name: "South Goa", desc: "Palolem, Colva beaches — peaceful and pristine" },
+      { name: "Old Goa", desc: "Portuguese colonial churches and UNESCO basilicas" },
+      { name: "Dudhsagar Falls", desc: "Spectacular four-tiered waterfall in the jungle" },
     ],
-    highlights: ["Heritage Tours", "Wildlife Safaris", "Beach Getaways", "Coffee Estate Stays", "Trekking Adventures"],
+    highlights: ["Beach Holidays", "Water Sports", "Heritage Walks", "Seafood Trails", "Honeymoon Packages"],
   },
   {
     id: "tamil-nadu",
@@ -71,21 +86,6 @@ const destinations = [
       { name: "Coimbatore", desc: "Gateway to Ooty with Isha Yoga Centre" },
     ],
     highlights: ["Temple Circuits", "Hill Station Escapes", "Cultural Immersion", "Pilgrimage Tours", "Heritage Trails"],
-  },
-  {
-    id: "goa",
-    name: "Goa",
-    tagline: "Sun, Sand & Soul",
-    description:
-      "Goa is India's pocket of paradise — where golden beaches meet Portuguese heritage, fresh seafood, vibrant markets, and a spirit that refuses to slow down. Perfect for couples, friends, and families alike.",
-    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=2000&auto=format&fit=crop",
-    places: [
-      { name: "North Goa", desc: "Baga, Calangute, Anjuna beaches and vibrant nightlife" },
-      { name: "South Goa", desc: "Palolem, Colva beaches — peaceful and pristine" },
-      { name: "Old Goa", desc: "Portuguese colonial churches and UNESCO basilicas" },
-      { name: "Dudhsagar Falls", desc: "Spectacular four-tiered waterfall in the jungle" },
-    ],
-    highlights: ["Beach Holidays", "Water Sports", "Heritage Walks", "Seafood Trails", "Honeymoon Packages"],
   },
   {
     id: "north-india",

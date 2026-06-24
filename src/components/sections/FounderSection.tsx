@@ -154,7 +154,7 @@ export function FounderSection() {
             variants={fadeBlurUp}
             className="text-gray-500 text-base md:text-[17px] font-light leading-[1.8] italic max-w-2xl mx-auto mb-8"
           >
-            &ldquo;GK Journeys was born to disrupt generic travel. My mission is to offer completely tailored, transparent travel planning where your comfort, joy, and memories are the ultimate priority. When you travel with us, you speak directly with the founder — we don&apos;t just plan trips; we craft personal transformations.&rdquo;
+            &ldquo;GK Journeys started with one simple idea: travel planning should be personal, not pushy. I handle every trip myself - from your first call to sharing driver details. No call centers, no hidden costs. Just clear plans, fair pricing, and trips you'll actually remember."&rdquo;
           </motion.p>
 
           {/* Founder signature block */}

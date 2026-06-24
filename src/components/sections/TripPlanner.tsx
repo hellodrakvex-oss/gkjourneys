@@ -8,10 +8,10 @@ import { Heart, Users, Briefcase, Mountain, Send, ChevronRight, ChevronLeft, Che
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
 const destinations = [
-  { id: "kerala",      label: "Kerala",      emoji: "🌿", sub: "Backwaters & Hills" },
-  { id: "tamil-nadu",  label: "Tamil Nadu",  emoji: "🏛️", sub: "Heritage & Beaches" },
   { id: "karnataka",   label: "Karnataka",   emoji: "🏔️", sub: "Forests & Culture" },
+  { id: "kerala",      label: "Kerala",      emoji: "🌿", sub: "Backwaters & Hills" },
   { id: "goa",         label: "Goa",         emoji: "🌊", sub: "Beaches & Vibes" },
+  { id: "tamil-nadu",  label: "Tamil Nadu",  emoji: "🏛️", sub: "Heritage & Beaches" },
   { id: "north-india", label: "North India", emoji: "❄️", sub: "Peaks & Palaces" },
 ];
 

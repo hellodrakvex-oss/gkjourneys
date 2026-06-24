@@ -16,7 +16,7 @@ export function HeroSection() {
         className="absolute inset-0"
       >
         <Image
-          src={heroImage}
+          src="/images/hero.png"
           alt="GK Journeys - Premium Travel Experiences"
           fill
           priority
