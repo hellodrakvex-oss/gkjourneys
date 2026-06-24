@@ -47,19 +47,21 @@ export function HeroSection() {
           >
             {/* Premium Pill Badge Label */}
             <motion.div
-              variants={{
-                hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
-                visible: { opacity: 1, y: 0, filter: "blur(0px)" },
-              }}
-              transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
-              className="mb-8 inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-white/25 bg-black/30 backdrop-blur-md shadow-[0_8px_32px_rgba(0,0,0,0.5)] relative overflow-hidden"
-            >
-              {/* Subtle glass reflection */}
-              <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
-              <span className="relative z-10 text-white font-sans text-xs md:text-sm font-bold tracking-[0.3em] uppercase drop-shadow-md">
-                GK Journeys
-              </span>
-            </motion.div>
+  variants={{
+    hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
+    visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+  }}
+  transition={{ duration: 1, ease: [0.21, 0.47, 0.32, 0.98] }}
+  className="mb-8 inline-flex items-center justify-center px-7 py-3 rounded-full border border-amber-400/30 bg-black/40 backdrop-blur-xl shadow-[0_8px_40px_rgba(0,0,0,0.6)] relative overflow-hidden"
+>
+  <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 via-white/5 to-amber-500/10 animate-pulse" />
+
+  <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/15 to-transparent" />
+
+  <span className="relative z-10 text-amber-300 font-bold text-sm md:text-base tracking-[0.35em] uppercase drop-shadow-[0_0_20px_rgba(251,191,36,0.6)]">
+     GK Journeys 
+  </span>
+</motion.div>
 
             {/* Heading */}
             <motion.h1
