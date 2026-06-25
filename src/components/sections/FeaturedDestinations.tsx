@@ -9,7 +9,7 @@ const destinations = [
     name: "Karnataka",
     id: "karnataka",
     tagline: "One State. Many Worlds.",
-    img: "/mysore-palace.png",
+    img: "/images/mysore-palace.png",
     icon: "🛕",
   },
   {
