@@ -154,8 +154,8 @@ export function FounderSection() {
             variants={fadeBlurUp}
             className="text-gray-500 text-base md:text-[17px] font-light leading-[1.8] italic max-w-2xl mx-auto mb-8"
           >
-            &ldquo;GK Journeys started with one simple idea: travel planning should be personal, not pushy. I handle every trip myself - from your first call to sharing driver details. No call centers, no hidden costs. Just clear plans, fair pricing, and trips you'll actually remember."&rdquo;
-          </motion.p>
+             &ldquo;GK Journeys started with one simple idea: travel planning should be personal, not pushy. I handle every trip myself — from your first call to sharing driver and accommodation details. No call centers, no hidden costs. Just clear plans, fair pricing, and trips you&apos;ll actually remember.&rdquo;
+</motion.p>
 
           {/* Founder signature block */}
           <motion.div variants={fadeBlurUp} className="mb-10">

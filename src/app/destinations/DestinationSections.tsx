@@ -107,12 +107,13 @@ export function DestinationSections({ destinations }: { destinations: Destinatio
                 >
                   <div className="relative h-[320px] md:h-[440px] rounded-3xl shadow-2xl overflow-hidden">
                     <Image
-                      src="/images/hero.png"
-                      alt={dest.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover object-center"
-                    />
+  src={dest.image}
+  alt={dest.name}
+  fill
+  sizes="(max-width: 768px) 100vw, 50vw"
+  className="object-cover object-center"
+  quality={90}
+/>
                   </div>
                 </motion.div>
 

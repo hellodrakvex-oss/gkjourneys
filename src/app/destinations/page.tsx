@@ -41,7 +41,7 @@ const destinations = [
     tagline: "God's Own Country",
     description:
       "Kerala is a tropical paradise of backwater canals, lush hill stations, Ayurveda retreats, and pristine beaches. From the tea gardens of Munnar to the serene houseboat experiences of Alleppey — Kerala is a journey into nature and soul.",
-    image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/kerala.png",
     places: [
       { name: "Munnar", desc: "Rolling tea gardens, mist and cool mountain air" },
       { name: "Alleppey", desc: "Iconic houseboat stays on tranquil backwaters" },
@@ -58,7 +58,7 @@ const destinations = [
     tagline: "Sun, Sand & Soul",
     description:
       "Goa is India's pocket of paradise — where golden beaches meet Portuguese heritage, fresh seafood, vibrant markets, and a spirit that refuses to slow down. Perfect for couples, friends, and families alike.",
-    image: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/goa.png",
     places: [
       { name: "North Goa", desc: "Baga, Calangute, Anjuna beaches and vibrant nightlife" },
       { name: "South Goa", desc: "Palolem, Colva beaches — peaceful and pristine" },
@@ -73,7 +73,7 @@ const destinations = [
     tagline: "The Dravidian Soul of India",
     description:
       "Tamil Nadu is where ancient Dravidian culture meets modern dynamism. From towering temple gopurams to misty hill stations and serene backwaters — Tamil Nadu is a journey through time and devotion.",
-    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/tamilnadu.png",
     places: [
       { name: "Ooty", desc: "Queen of Hill Stations — tea gardens and toy train rides" },
       { name: "Kodaikanal", desc: "Princess of Hill Stations with stunning Coaker's Walk" },
@@ -93,7 +93,7 @@ const destinations = [
     tagline: "The Grand Story of India",
     description:
       "North India is a land of legends — the snow-capped Himalayas, royal Rajasthan palaces, the Taj Mahal's eternal love story, and the spiritual banks of the Ganges. A journey here is a journey into India's greatest chapters.",
-    image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/northindia.png",
     places: [
       { name: "Rajasthan", desc: "Jaipur, Jodhpur, Udaipur — royal palaces and desert safaris" },
       { name: "Himachal Pradesh", desc: "Shimla, Manali, Spiti Valley — mountain magic" },

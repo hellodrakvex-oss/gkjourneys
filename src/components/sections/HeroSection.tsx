@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const heroImage = "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=90&w=2400&auto=format&fit=crop";
 
 export function HeroSection() {
   return (
