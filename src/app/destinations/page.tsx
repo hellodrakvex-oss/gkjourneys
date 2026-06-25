@@ -20,7 +20,7 @@ const destinations = [
     tagline: "Land of Heritage & Nature",
     description:
       "Karnataka is a rich tapestry of ancient temples, royal palaces, pristine beaches, and wildlife sanctuaries. From the heritage city of Mysore to the misty hills of Chikmagalur — Karnataka offers something for every kind of traveler.",
-    image: "/mysore-palace.png",
+    image: "/images/mysore-palace.png",
     places: [
       { name: "Mysore", desc: "Royal palaces, silk markets, and Dasara festival" },
       { name: "Coorg", desc: "Coffee plantations, waterfalls, and misty hills" },
